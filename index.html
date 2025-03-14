@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <style>
+        /* Estilo básico para todo el cuerpo */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        /* Encabezado */
+        header {
+            background-color:  #ADD8E6;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            height: 60px;
+        }
+
+        /* Contenedor principal con el menú y contenido */
+        .main-container {
+            display: flex;
+            flex: 1;
+        }
+
+        /* Menú */
+        .menu {
+            width: 200px;
+            background-color: #f4f4f4;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        /* Contenido principal */
+        .content {
+            flex: 1;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        /* Estilo para iframes */          iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Encabezado -->   
+    <header><center>
+        <h1>INFOP-TECNICO PROGRAMADOR-Jonathan Matamoros</h1></center>
+    </header>
+
+    <!-- Contenedor principal con menú y contenido -->
+    <div class="main-container">
+        <!-- Menú -->
+        <div class="menu">
+            <iframe src="menu.html" name="menu"></iframe>
+        </div>
+
+        <!-- Contenido principal -->
+        <div class="content">
+            <iframe src="contenido.html" name="principal"></iframe>
+        </div>
+    </div>
+
+</body>
+</html>
